@@ -1,0 +1,959 @@
+1,1,0.010
+1,2,0.004
+1,3,0.005
+2,1,0.635
+2,2,0.142
+2,3,0.194
+3,1,0.428
+3,2,0.095
+3,3,0.100
+4,1,0.156
+4,2,0.118
+4,3,0.117
+5,1,0.370
+5,2,0.317
+5,3,0.344
+6,1,0.690
+6,2,0.495
+6,3,0.507
+7,1,0.077
+7,2,0.057
+7,3,0.062
+8,1,0.078
+8,2,0.038
+8,3,0.039
+9,1,0.490
+9,2,0.372
+9,3,0.374
+10,1,0.592
+10,2,0.508
+10,3,0.488
+11,1,0.328
+11,2,0.286
+11,3,0.291
+12,1,0.392
+12,2,0.367
+12,3,0.380
+13,1,0.552
+13,2,0.496
+13,3,0.536
+14,1,0.857
+14,2,0.764
+14,3,0.805
+15,1,0.694
+15,2,0.622
+15,3,0.629
+16,1,0.379
+16,2,0.354
+16,3,0.326
+1,1,0.005
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT for at least one column on default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(*) FROM hits;)
+1,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT for at least one column on default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(*) FROM hits;)
+1,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT for at least one column on default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(*) FROM hits;)
+2,1,0.004
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(AdvEngineID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(*) FROM hits WHERE AdvEngineID <> 0;)
+2,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(AdvEngineID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(*) FROM hits WHERE AdvEngineID <> 0;)
+2,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(AdvEngineID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(*) FROM hits WHERE AdvEngineID <> 0;)
+3,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(AdvEngineID, ResolutionWidth) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SUM(AdvEngineID), COUNT(*), AVG(ResolutionWidth) FROM hits;)
+3,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(AdvEngineID, ResolutionWidth) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SUM(AdvEngineID), COUNT(*), AVG(ResolutionWidth) FROM hits;)
+3,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(AdvEngineID, ResolutionWidth) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SUM(AdvEngineID), COUNT(*), AVG(ResolutionWidth) FROM hits;)
+4,1,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT AVG(UserID) FROM hits;)
+4,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT AVG(UserID) FROM hits;)
+4,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT AVG(UserID) FROM hits;)
+5,1,0.005
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(DISTINCT UserID) FROM hits;)
+5,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(DISTINCT UserID) FROM hits;)
+5,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(DISTINCT UserID) FROM hits;)
+6,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(DISTINCT SearchPhrase) FROM hits;)
+6,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(DISTINCT SearchPhrase) FROM hits;)
+6,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(DISTINCT SearchPhrase) FROM hits;)
+7,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(EventDate) ON default.hits. (ACCESS_DENIED)
+(query: SELECT MIN(EventDate), MAX(EventDate) FROM hits;)
+7,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(EventDate) ON default.hits. (ACCESS_DENIED)
+(query: SELECT MIN(EventDate), MAX(EventDate) FROM hits;)
+7,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(EventDate) ON default.hits. (ACCESS_DENIED)
+(query: SELECT MIN(EventDate), MAX(EventDate) FROM hits;)
+8,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(AdvEngineID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT AdvEngineID, COUNT(*) FROM hits WHERE AdvEngineID <> 0 GROUP BY AdvEngineID ORDER BY COUNT(*) DESC;)
+8,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(AdvEngineID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT AdvEngineID, COUNT(*) FROM hits WHERE AdvEngineID <> 0 GROUP BY AdvEngineID ORDER BY COUNT(*) DESC;)
+8,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(AdvEngineID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT AdvEngineID, COUNT(*) FROM hits WHERE AdvEngineID <> 0 GROUP BY AdvEngineID ORDER BY COUNT(*) DESC;)
+9,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(RegionID, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT RegionID, COUNT(DISTINCT UserID) AS u FROM hits GROUP BY RegionID ORDER BY u DESC LIMIT 10;)
+9,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(RegionID, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT RegionID, COUNT(DISTINCT UserID) AS u FROM hits GROUP BY RegionID ORDER BY u DESC LIMIT 10;)
+9,3,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(RegionID, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT RegionID, COUNT(DISTINCT UserID) AS u FROM hits GROUP BY RegionID ORDER BY u DESC LIMIT 10;)
+10,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(RegionID, AdvEngineID, ResolutionWidth, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT RegionID, SUM(AdvEngineID), COUNT(*) AS c, AVG(ResolutionWidth), COUNT(DISTINCT UserID) FROM hits GROUP BY RegionID ORDER BY c DESC LIMIT 10;)
+10,2,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(RegionID, AdvEngineID, ResolutionWidth, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT RegionID, SUM(AdvEngineID), COUNT(*) AS c, AVG(ResolutionWidth), COUNT(DISTINCT UserID) FROM hits GROUP BY RegionID ORDER BY c DESC LIMIT 10;)
+10,3,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(RegionID, AdvEngineID, ResolutionWidth, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT RegionID, SUM(AdvEngineID), COUNT(*) AS c, AVG(ResolutionWidth), COUNT(DISTINCT UserID) FROM hits GROUP BY RegionID ORDER BY c DESC LIMIT 10;)
+11,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(MobilePhoneModel, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT MobilePhoneModel, COUNT(DISTINCT UserID) AS u FROM hits WHERE MobilePhoneModel <> '' GROUP BY MobilePhoneModel ORDER BY u DESC LIMIT 10;)
+11,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(MobilePhoneModel, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT MobilePhoneModel, COUNT(DISTINCT UserID) AS u FROM hits WHERE MobilePhoneModel <> '' GROUP BY MobilePhoneModel ORDER BY u DESC LIMIT 10;)
+11,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(MobilePhoneModel, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT MobilePhoneModel, COUNT(DISTINCT UserID) AS u FROM hits WHERE MobilePhoneModel <> '' GROUP BY MobilePhoneModel ORDER BY u DESC LIMIT 10;)
+12,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(MobilePhone, MobilePhoneModel, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT MobilePhone, MobilePhoneModel, COUNT(DISTINCT UserID) AS u FROM hits WHERE MobilePhoneModel <> '' GROUP BY MobilePhone, MobilePhoneModel ORDER BY u DESC LIMIT 10;)
+12,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(MobilePhone, MobilePhoneModel, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT MobilePhone, MobilePhoneModel, COUNT(DISTINCT UserID) AS u FROM hits WHERE MobilePhoneModel <> '' GROUP BY MobilePhone, MobilePhoneModel ORDER BY u DESC LIMIT 10;)
+12,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(MobilePhone, MobilePhoneModel, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT MobilePhone, MobilePhoneModel, COUNT(DISTINCT UserID) AS u FROM hits WHERE MobilePhoneModel <> '' GROUP BY MobilePhone, MobilePhoneModel ORDER BY u DESC LIMIT 10;)
+13,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchPhrase, COUNT(*) AS c FROM hits WHERE SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY c DESC LIMIT 10;)
+13,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchPhrase, COUNT(*) AS c FROM hits WHERE SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY c DESC LIMIT 10;)
+13,3,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchPhrase, COUNT(*) AS c FROM hits WHERE SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY c DESC LIMIT 10;)
+14,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchPhrase, COUNT(DISTINCT UserID) AS u FROM hits WHERE SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY u DESC LIMIT 10;)
+14,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchPhrase, COUNT(DISTINCT UserID) AS u FROM hits WHERE SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY u DESC LIMIT 10;)
+14,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchPhrase, COUNT(DISTINCT UserID) AS u FROM hits WHERE SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY u DESC LIMIT 10;)
+15,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchEngineID, SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchEngineID, SearchPhrase, COUNT(*) AS c FROM hits WHERE SearchPhrase <> '' GROUP BY SearchEngineID, SearchPhrase ORDER BY c DESC LIMIT 10;)
+15,2,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchEngineID, SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchEngineID, SearchPhrase, COUNT(*) AS c FROM hits WHERE SearchPhrase <> '' GROUP BY SearchEngineID, SearchPhrase ORDER BY c DESC LIMIT 10;)
+15,3,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchEngineID, SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchEngineID, SearchPhrase, COUNT(*) AS c FROM hits WHERE SearchPhrase <> '' GROUP BY SearchEngineID, SearchPhrase ORDER BY c DESC LIMIT 10;)
+16,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID, COUNT(*) FROM hits GROUP BY UserID ORDER BY COUNT(*) DESC LIMIT 10;)
+16,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID, COUNT(*) FROM hits GROUP BY UserID ORDER BY COUNT(*) DESC LIMIT 10;)
+16,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID, COUNT(*) FROM hits GROUP BY UserID ORDER BY COUNT(*) DESC LIMIT 10;)
+17,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID, SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, SearchPhrase ORDER BY COUNT(*) DESC LIMIT 10;)
+17,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID, SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, SearchPhrase ORDER BY COUNT(*) DESC LIMIT 10;)
+17,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID, SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, SearchPhrase ORDER BY COUNT(*) DESC LIMIT 10;)
+18,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID, SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, SearchPhrase LIMIT 10;)
+18,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID, SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, SearchPhrase LIMIT 10;)
+18,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID, SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, SearchPhrase LIMIT 10;)
+19,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID, EventTime, SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID, extract(minute FROM EventTime) AS m, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, m, SearchPhrase ORDER BY COUNT(*) DESC LIMIT 10;)
+19,2,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID, EventTime, SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID, extract(minute FROM EventTime) AS m, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, m, SearchPhrase ORDER BY COUNT(*) DESC LIMIT 10;)
+19,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID, EventTime, SearchPhrase) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID, extract(minute FROM EventTime) AS m, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, m, SearchPhrase ORDER BY COUNT(*) DESC LIMIT 10;)
+20,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID FROM hits WHERE UserID = 435090932899640449;)
+20,2,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID FROM hits WHERE UserID = 435090932899640449;)
+20,3,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT UserID FROM hits WHERE UserID = 435090932899640449;)
+21,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(URL) ON default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(*) FROM hits WHERE URL LIKE '%google%';)
+21,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(URL) ON default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(*) FROM hits WHERE URL LIKE '%google%';)
+21,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(URL) ON default.hits. (ACCESS_DENIED)
+(query: SELECT COUNT(*) FROM hits WHERE URL LIKE '%google%';)
+22,1,0.004
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase, URL) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchPhrase, MIN(URL), COUNT(*) AS c FROM hits WHERE URL LIKE '%google%' AND SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY c DESC LIMIT 10;)
+22,2,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase, URL) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchPhrase, MIN(URL), COUNT(*) AS c FROM hits WHERE URL LIKE '%google%' AND SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY c DESC LIMIT 10;)
+22,3,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase, URL) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchPhrase, MIN(URL), COUNT(*) AS c FROM hits WHERE URL LIKE '%google%' AND SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY c DESC LIMIT 10;)
+23,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase, URL, Title, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchPhrase, MIN(URL), MIN(Title), COUNT(*) AS c, COUNT(DISTINCT UserID) FROM hits WHERE Title LIKE '%Google%' AND URL NOT LIKE '%.google.%' AND SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY c DESC LIMIT 10;)
+23,2,0.001
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase, URL, Title, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchPhrase, MIN(URL), MIN(Title), COUNT(*) AS c, COUNT(DISTINCT UserID) FROM hits WHERE Title LIKE '%Google%' AND URL NOT LIKE '%.google.%' AND SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY c DESC LIMIT 10;)
+23,3,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(SearchPhrase, URL, Title, UserID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT SearchPhrase, MIN(URL), MIN(Title), COUNT(*) AS c, COUNT(DISTINCT UserID) FROM hits WHERE Title LIKE '%Google%' AND URL NOT LIKE '%.google.%' AND SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY c DESC LIMIT 10;)
+24,1,0.003
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(WatchID, JavaEnable, Title, GoodEvent, EventTime, EventDate, CounterID, ClientIP, RegionID, UserID, CounterClass, OS, UserAgent, URL, Referer, IsRefresh, RefererCategoryID, RefererRegionID, URLCategoryID, URLRegionID, ResolutionWidth, ResolutionHeight, ResolutionDepth, FlashMajor, FlashMinor, FlashMinor2, NetMajor, NetMinor, UserAgentMajor, UserAgentMinor, CookieEnable, JavascriptEnable, IsMobile, MobilePhone, MobilePhoneModel, Params, IPNetworkID, TraficSourceID, SearchEngineID, SearchPhrase, AdvEngineID, IsArtifical, WindowClientWidth, WindowClientHeight, ClientTimeZone, ClientEventTime, SilverlightVersion1, SilverlightVersion2, SilverlightVersion3, SilverlightVersion4, PageCharset, CodeVersion, IsLink, IsDownload, IsNotBounce, FUniqID, OriginalURL, HID, IsOldCounter, IsEvent, IsParameter, DontCountHits, WithHash, HitColor, LocalEventTime, Age, Sex, Income, Interests, Robotness, RemoteIP, WindowName, OpenerName, HistoryLength, BrowserLanguage, BrowserCountry, SocialNetwork, SocialAction, HTTPError, SendTiming, DNSTiming, ConnectTiming, ResponseStartTiming, ResponseEndTiming, FetchTiming, SocialSourceNetworkID, SocialSourcePage, ParamPrice, ParamOrderID, ParamCurrency, ParamCurrencyID, OpenstatServiceName, OpenstatCampaignID, OpenstatAdID, OpenstatSourceID, UTMSource, UTMMedium, UTMCampaign, UTMContent, UTMTerm, FromTag, HasGCLID, RefererHash, URLHash, CLID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT * FROM hits WHERE URL LIKE '%google%' ORDER BY EventTime LIMIT 10;)
+24,2,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(WatchID, JavaEnable, Title, GoodEvent, EventTime, EventDate, CounterID, ClientIP, RegionID, UserID, CounterClass, OS, UserAgent, URL, Referer, IsRefresh, RefererCategoryID, RefererRegionID, URLCategoryID, URLRegionID, ResolutionWidth, ResolutionHeight, ResolutionDepth, FlashMajor, FlashMinor, FlashMinor2, NetMajor, NetMinor, UserAgentMajor, UserAgentMinor, CookieEnable, JavascriptEnable, IsMobile, MobilePhone, MobilePhoneModel, Params, IPNetworkID, TraficSourceID, SearchEngineID, SearchPhrase, AdvEngineID, IsArtifical, WindowClientWidth, WindowClientHeight, ClientTimeZone, ClientEventTime, SilverlightVersion1, SilverlightVersion2, SilverlightVersion3, SilverlightVersion4, PageCharset, CodeVersion, IsLink, IsDownload, IsNotBounce, FUniqID, OriginalURL, HID, IsOldCounter, IsEvent, IsParameter, DontCountHits, WithHash, HitColor, LocalEventTime, Age, Sex, Income, Interests, Robotness, RemoteIP, WindowName, OpenerName, HistoryLength, BrowserLanguage, BrowserCountry, SocialNetwork, SocialAction, HTTPError, SendTiming, DNSTiming, ConnectTiming, ResponseStartTiming, ResponseEndTiming, FetchTiming, SocialSourceNetworkID, SocialSourcePage, ParamPrice, ParamOrderID, ParamCurrency, ParamCurrencyID, OpenstatServiceName, OpenstatCampaignID, OpenstatAdID, OpenstatSourceID, UTMSource, UTMMedium, UTMCampaign, UTMContent, UTMTerm, FromTag, HasGCLID, RefererHash, URLHash, CLID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT * FROM hits WHERE URL LIKE '%google%' ORDER BY EventTime LIMIT 10;)
+24,3,0.002
+Received exception from server (version 25.9.2):
+Code: 497. DB::Exception: Received from localhost:9000. DB::Exception: test: Not enough privileges. To execute this query, it's necessary to have the grant SELECT(WatchID, JavaEnable, Title, GoodEvent, EventTime, EventDate, CounterID, ClientIP, RegionID, UserID, CounterClass, OS, UserAgent, URL, Referer, IsRefresh, RefererCategoryID, RefererRegionID, URLCategoryID, URLRegionID, ResolutionWidth, ResolutionHeight, ResolutionDepth, FlashMajor, FlashMinor, FlashMinor2, NetMajor, NetMinor, UserAgentMajor, UserAgentMinor, CookieEnable, JavascriptEnable, IsMobile, MobilePhone, MobilePhoneModel, Params, IPNetworkID, TraficSourceID, SearchEngineID, SearchPhrase, AdvEngineID, IsArtifical, WindowClientWidth, WindowClientHeight, ClientTimeZone, ClientEventTime, SilverlightVersion1, SilverlightVersion2, SilverlightVersion3, SilverlightVersion4, PageCharset, CodeVersion, IsLink, IsDownload, IsNotBounce, FUniqID, OriginalURL, HID, IsOldCounter, IsEvent, IsParameter, DontCountHits, WithHash, HitColor, LocalEventTime, Age, Sex, Income, Interests, Robotness, RemoteIP, WindowName, OpenerName, HistoryLength, BrowserLanguage, BrowserCountry, SocialNetwork, SocialAction, HTTPError, SendTiming, DNSTiming, ConnectTiming, ResponseStartTiming, ResponseEndTiming, FetchTiming, SocialSourceNetworkID, SocialSourcePage, ParamPrice, ParamOrderID, ParamCurrency, ParamCurrencyID, OpenstatServiceName, OpenstatCampaignID, OpenstatAdID, OpenstatSourceID, UTMSource, UTMMedium, UTMCampaign, UTMContent, UTMTerm, FromTag, HasGCLID, RefererHash, URLHash, CLID) ON default.hits. (ACCESS_DENIED)
+(query: SELECT * FROM hits WHERE URL LIKE '%google%' ORDER BY EventTime LIMIT 10;)
+1,1,0.002
+1,2,0.001
+1,3,0.001
+1,1,0.001
+1,2,0.001
+1,3,0.001
+1,1,0.002
+1,2,0.002
+1,3,0.001
+1,1,0.001
+1,2,0.001
+1,3,0.001
+2,1,0.032
+2,2,0.033
+2,3,0.022
+3,1,0.148
+3,2,0.107
+3,3,0.112
+4,1,0.158
+4,2,0.121
+4,3,0.128
+5,1,0.295
+5,2,0.246
+5,3,0.332
+6,1,0.569
+6,2,0.651
+6,3,0.623
+7,1,0.079
+7,2,0.073
+7,3,0.070
+8,1,0.043
+8,2,0.043
+8,3,0.039
+9,1,0.666
+9,2,0.746
+9,3,0.787
+10,1,0.937
+10,2,0.999
+10,3,0.973
+11,1,0.407
+11,2,0.547
+11,3,0.556
+12,1,0.660
+12,2,0.739
+12,3,0.791
+13,1,0.814
+13,2,0.964
+13,3,0.905
+14,1,1.192
+14,2,1.421
+14,3,1.404
+15,1,1.102
+15,2,1.102
+15,3,1.135
+16,1,0.460
+16,2,0.601
+16,3,0.587
+17,1,1.701
+17,2,1.809
+17,3,1.932
+18,1,1.150
+18,2,1.206
+18,3,1.288
+19,1,3.285
+19,2,2.981
+19,3,5.157
+20,1,0.095
+20,2,0.025
+20,3,0.025
+21,1,1.457
+21,2,0.202
+21,3,0.185
+22,1,1.794
+22,2,0.049
+22,3,0.040
+23,1,2.256
+23,2,0.476
+23,3,0.449
+24,1,1.009
+24,2,0.818
+24,3,0.713
+25,1,0.683
+25,2,0.814
+25,3,0.782
+26,1,0.372
+26,2,0.517
+26,3,0.528
+27,1,0.683
+27,2,0.784
+27,3,0.839
+28,1,1.564
+28,2,1.595
+28,3,1.506
+29,1,8.762
+29,2,8.897
+29,3,8.653
+30,1,0.131
+30,2,0.153
+30,3,0.126
+31,1,1.238
+31,2,1.453
+31,3,1.425
+32,1,1.521
+32,2,1.630
+32,3,1.658
+33,1,5.542
+33,2,5.399
+33,3,5.389
+34,1,3.211
+34,2,3.046
+34,3,3.123
+35,1,3.227
+35,2,2.988
+35,3,2.919
+36,1,0.322
+36,2,0.409
+36,3,0.439
+37,1,0.004
+37,2,0.003
+37,3,0.003
+38,1,0.005
+38,2,0.004
+38,3,0.004
+39,1,0.004
+39,2,0.004
+39,3,0.004
+40,1,0.004
+40,2,0.004
+40,3,0.004
+41,1,0.005
+41,2,0.004
+41,3,0.004
+42,1,0.004
+42,2,0.004
+42,3,0.004
+43,1,0.004
+43,2,0.004
+43,3,0.004
+1,1,0.001
+1,2,0.001
+1,3,0.001
+2,1,0.036
+2,2,0.024
+2,3,0.031
+3,1,0.124
+3,2,0.137
+3,3,0.115
+4,1,0.166
+4,2,0.152
+4,3,0.156
+5,1,0.330
+5,2,0.364
+5,3,0.459
+6,1,0.680
+6,2,0.837
+6,3,0.848
+7,1,0.123
+7,2,0.094
+7,3,0.093
+8,1,0.053
+8,2,0.096
+8,3,0.072
+9,1,0.582
+9,2,0.768
+9,3,0.754
+10,1,0.714
+10,2,0.888
+10,3,0.976
+11,1,0.436
+11,2,0.547
+11,3,0.576
+12,1,0.628
+12,2,0.737
+12,3,0.718
+13,1,0.771
+13,2,0.898
+13,3,0.935
+14,1,1.297
+14,2,1.313
+14,3,1.423
+15,1,1.018
+15,2,1.053
+15,3,1.124
+16,1,0.457
+16,2,0.629
+16,3,0.545
+17,1,1.917
+17,2,1.793
+17,3,1.671
+18,1,1.013
+18,2,1.121
+18,3,1.198
+19,1,5.327
+19,2,3.220
+19,3,3.365
+20,1,0.059
+20,2,0.026
+20,3,0.027
+21,1,0.295
+21,2,0.122
+21,3,0.146
+22,1,0.136
+22,2,0.041
+22,3,0.038
+23,1,0.640
+23,2,0.350
+23,3,0.401
+24,1,0.894
+24,2,0.675
+24,3,0.643
+25,1,0.640
+25,2,0.788
+25,3,0.778
+26,1,0.354
+26,2,0.557
+26,3,0.543
+27,1,0.754
+27,2,0.843
+27,3,0.858
+28,1,1.627
+28,2,1.749
+28,3,1.674
+29,1,8.988
+29,2,8.779
+29,3,9.010
+30,1,0.974
+30,2,0.138
+30,3,0.119
+31,1,1.200
+31,2,1.421
+31,3,1.420
+32,1,1.545
+32,2,1.632
+32,3,1.791
+33,1,5.667
+33,2,5.261
+33,3,5.288
+34,1,3.465
+34,2,3.562
+34,3,3.491
+35,1,3.206
+35,2,3.145
+35,3,3.208
+36,1,0.327
+36,2,0.365
+36,3,0.426
+37,1,0.005
+37,2,0.004
+37,3,0.003
+38,1,0.003
+38,2,0.003
+38,3,0.004
+39,1,0.004
+39,2,0.003
+39,3,0.003
+40,1,0.005
+40,2,0.005
+40,3,0.004
+41,1,0.004
+41,2,0.004
+41,3,0.004
+42,1,0.005
+42,2,0.005
+42,3,0.005
+43,1,0.005
+43,2,0.004
+43,3,0.003
+1,1,0.001
+1,2,0.001
+1,3,0.001
+2,1,0.054
+2,2,0.060
+2,3,0.055
+3,1,0.239
+3,2,0.232
+3,3,0.209
+4,1,0.178
+4,2,0.152
+4,3,0.168
+5,1,0.475
+5,2,0.421
+5,3,0.403
+6,1,0.857
+6,2,0.972
+6,3,1.101
+7,1,0.144
+7,2,0.149
+7,3,0.151
+8,1,0.071
+8,2,0.068
+8,3,0.068
+9,1,0.837
+9,2,0.771
+9,3,0.887
+10,1,1.029
+10,2,0.973
+10,3,1.120
+11,1,0.649
+11,2,0.683
+11,3,0.728
+12,1,0.849
+12,2,0.769
+12,3,0.774
+13,1,1.024
+13,2,0.947
+13,3,0.884
+14,1,1.499
+14,2,1.488
+14,3,1.445
+15,1,1.261
+15,2,1.166
+15,3,1.192
+16,1,0.678
+16,2,0.623
+16,3,0.603
+17,1,1.964
+17,2,2.002
+17,3,2.056
+18,1,1.411
+18,2,1.336
+18,3,1.284
+19,1,3.060
+19,2,2.963
+19,3,3.414
+20,1,0.051
+20,2,0.032
+20,3,0.026
+21,1,0.501
+21,2,0.209
+21,3,0.201
+22,1,0.171
+22,2,0.058
+22,3,0.056
+23,1,1.022
+23,2,0.506
+23,3,0.525
+24,1,1.153
+24,2,0.903
+24,3,0.878
+25,1,0.918
+25,2,0.859
+25,3,0.863
+26,1,0.635
+26,2,0.631
+26,3,0.642
+27,1,1.082
+27,2,0.879
+27,3,0.980
+28,1,2.010
+28,2,1.900
+28,3,1.811
+29,1,9.213
+29,2,9.005
+29,3,8.896
+30,1,0.216
+30,2,0.202
+30,3,0.201
+31,1,1.704
+31,2,1.611
+31,3,1.665
+32,1,1.878
+32,2,1.783
+32,3,1.737
+33,1,5.345
+33,2,4.970
+33,3,4.946
+34,1,3.659
+34,2,3.309
+34,3,3.237
+35,1,3.560
+35,2,3.289
+35,3,3.278
+36,1,0.503
+36,2,0.512
+36,3,0.493
+37,1,0.004
+37,2,0.003
+37,3,0.003
+38,1,0.004
+38,2,0.005
+38,3,0.005
+39,1,0.004
+39,2,0.005
+39,3,0.005
+40,1,0.004
+40,2,0.004
+40,3,0.004
+41,1,0.004
+41,2,0.004
+41,3,0.004
+42,1,0.004
+42,2,0.004
+42,3,0.004
+43,1,0.004
+43,2,0.004
+43,3,0.004
+1,1,0.003
+1,2,0.001
+1,3,0.001
+2,1,0.432
+2,2,0.130
+2,3,0.127
+3,1,0.443
+3,2,0.450
+3,3,0.475
+4,1,0.470
+4,2,0.369
+4,3,0.355
+5,1,1.168
+5,2,1.023
+5,3,1.041
+6,1,1.747
+6,2,1.397
+6,3,1.370
+7,1,0.457
+7,2,0.410
+7,3,0.416
+8,1,0.190
+8,2,0.175
+8,3,0.169
+9,1,1.382
+9,2,1.613
+9,3,1.368
+10,1,2.256
+10,2,1.980
+10,3,2.001
+11,1,1.896
+11,2,1.460
+11,3,1.235
+1,1,0.002
+1,2,0.001
+1,3,0.001
+2,1,11.840
+Received exception from server (version 25.9.2):
+Code: 394. DB::Exception: Received from localhost:9000. DB::Exception: Query was cancelled. (QUERY_WAS_CANCELLED)
+(query: SELECT COUNT(*) FROM hits WHERE AdvEngineID <> 0;)
+1,1,0.002
+1,2,0.001
+1,3,0.001
+2,1,0.638
+2,2,0.224
+2,3,0.205
+3,1,0.940
+3,2,0.865
+3,3,0.816
+4,1,0.893
+4,2,0.786
+4,3,0.723
+5,1,1.876
+5,2,1.964
+5,3,1.786
+6,1,3.113
+6,2,2.808
+6,3,3.070
+7,1,0.650
+7,2,0.500
+7,3,0.493
+8,1,0.258
+8,2,0.250
+8,3,0.245
+9,1,3.450
+9,2,2.632
+9,3,2.982
+10,1,4.624
+10,2,4.401
+10,3,4.469
+11,1,3.120
+11,2,2.712
+11,3,2.786
+1,1,0.001
+1,2,0.001
+1,3,0.002
+2,1,0.464
+2,2,0.981
+2,3,0.958
+4,1,2.875
+3,1,3.710
+7,1,2.509
+4,2,3.648
+7,2,2.270
+3,2,4.250
+5,1,8.385
+7,3,2.323
+4,3,3.563
+8,1,1.233
+3,3,4.377
+8,2,1.343
+8,3,1.287
+6,1,14.453
+5,2,9.117
+9,1,16.994
+5,3,11.907
+11,1,14.742
+6,2,19.141
+10,1,22.752
+11,2,14.989
+9,2,18.197
+12,1,19.375
+6,3,19.623
+10,2,23.060
+11,3,15.062
+9,3,17.970
+12,2,18.975
+15,1,9.332
+Received exception from server (version 25.9.2):
+Code: 241. DB::Exception: Received from localhost:9000. DB::Exception: (total) memory limit exceeded: would use 7.66 GiB (attempt to allocate chunk of 0.00 B), current RSS: 5.03 GiB, maximum: 7.66 GiB. OvercommitTracker decision: Memory overcommit has not freed enough memory: While executing AggregatingTransform. (MEMORY_LIMIT_EXCEEDED)
+(query: SELECT SearchEngineID, SearchPhrase, COUNT(*) AS c FROM hits WHERE SearchPhrase <> '' GROUP BY SearchEngineID, SearchPhrase ORDER BY c DESC LIMIT 10;)
+13,1,21.251
+14,1,16.539
+Received exception from server (version 25.9.2):
+Code: 241. DB::Exception: Received from localhost:9000. DB::Exception: (total) memory limit exceeded: would use 7.66 GiB (attempt to allocate chunk of 0.00 B), current RSS: 4.52 GiB, maximum: 7.66 GiB. OvercommitTracker decision: Query was selected to stop by OvercommitTracker: While executing AggregatingTransform. (MEMORY_LIMIT_EXCEEDED)
+(query: SELECT SearchPhrase, COUNT(DISTINCT UserID) AS u FROM hits WHERE SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY u DESC LIMIT 10;)
+10,3,24.216
+12,3,20.209
+14,2,18.283
+Received exception from server (version 25.9.2):
+Code: 241. DB::Exception: Received from localhost:9000. DB::Exception: (total) memory limit exceeded: would use 7.67 GiB (attempt to allocate chunk of 0.00 B), current RSS: 6.75 GiB, maximum: 7.66 GiB. OvercommitTracker decision: Query was selected to stop by OvercommitTracker: While executing AggregatingTransform. (MEMORY_LIMIT_EXCEEDED)
+(query: SELECT SearchPhrase, COUNT(DISTINCT UserID) AS u FROM hits WHERE SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY u DESC LIMIT 10;)
+13,2,22.848
+16,1,18.616
+15,2,31.875
+16,2,8.225
+Received exception from server (version 25.9.2):
+Code: 241. DB::Exception: Received from localhost:9000. DB::Exception: (total) memory limit exceeded: would use 7.66 GiB (attempt to allocate chunk of 0.00 B), current RSS: 5.49 GiB, maximum: 7.66 GiB. OvercommitTracker decision: Memory overcommit has not freed enough memory: While executing AggregatingTransform. (MEMORY_LIMIT_EXCEEDED)
+(query: SELECT UserID, COUNT(*) FROM hits GROUP BY UserID ORDER BY COUNT(*) DESC LIMIT 10;)
+17,1,21.354
+Received exception from server (version 25.9.2):
+Code: 241. DB::Exception: Received from localhost:9000. DB::Exception: (total) memory limit exceeded: would use 7.66 GiB (attempt to allocate chunk of 0.00 B), current RSS: 5.50 GiB, maximum: 7.66 GiB. OvercommitTracker decision: Query was selected to stop by OvercommitTracker: While executing AggregatingTransform. (MEMORY_LIMIT_EXCEEDED)
+(query: SELECT UserID, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, SearchPhrase ORDER BY COUNT(*) DESC LIMIT 10;)
+14,3,14.868
+Received exception from server (version 25.9.2):
+Code: 241. DB::Exception: Received from localhost:9000. DB::Exception: (total) memory limit exceeded: would use 7.66 GiB (attempt to allocate chunk of 0.00 B), current RSS: 5.49 GiB, maximum: 7.66 GiB. OvercommitTracker decision: Memory overcommit has not freed enough memory: While executing AggregatingTransform. (MEMORY_LIMIT_EXCEEDED)
+(query: SELECT SearchPhrase, COUNT(DISTINCT UserID) AS u FROM hits WHERE SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY u DESC LIMIT 10;)
+16,3,1.207
+Received exception from server (version 25.9.2):
+Code: 241. DB::Exception: Received from localhost:9000. DB::Exception: (total) memory limit exceeded: would use 7.66 GiB (attempt to allocate chunk of 0.00 B), current RSS: 6.07 GiB, maximum: 7.66 GiB. OvercommitTracker decision: Query was selected to stop by OvercommitTracker: While executing AggregatingTransform. (MEMORY_LIMIT_EXCEEDED)
+(query: SELECT UserID, COUNT(*) FROM hits GROUP BY UserID ORDER BY COUNT(*) DESC LIMIT 10;)
+13,3,14.039
+Received exception from server (version 25.9.2):
+Code: 241. DB::Exception: Received from localhost:9000. DB::Exception: (total) memory limit exceeded: would use 7.66 GiB (attempt to allocate chunk of 0.00 B), current RSS: 4.82 GiB, maximum: 7.66 GiB. OvercommitTracker decision: Query was selected to stop by OvercommitTracker: While executing AggregatingTransform. (MEMORY_LIMIT_EXCEEDED)
+(query: SELECT SearchPhrase, COUNT(*) AS c FROM hits WHERE SearchPhrase <> '' GROUP BY SearchPhrase ORDER BY c DESC LIMIT 10;)
+20,1,0.803
+20,2,0.115
+20,3,0.128
+19,1,11.933
+Received exception from server (version 25.9.2):
+Code: 241. DB::Exception: Received from localhost:9000. DB::Exception: (total) memory limit exceeded: would use 7.66 GiB (attempt to allocate chunk of 0.00 B), current RSS: 6.68 GiB, maximum: 7.66 GiB. OvercommitTracker decision: Query was selected to stop by OvercommitTracker: While executing AggregatingTransform. (MEMORY_LIMIT_EXCEEDED)
+(query: SELECT UserID, extract(minute FROM EventTime) AS m, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, m, SearchPhrase ORDER BY COUNT(*) DESC LIMIT 10;)
+1,1,0.001
+1,2,0.001
+1,3,0.001
+2,1,7.971
+2,2,18.239
+2,3,17.040
+4,1,55.023
+3,1,66.682
+7,1,42.135
+1,1,0.001
+1,2,0.002
+1,3,0.002
+2,1,0.679
+2,2,0.967
+2,3,0.962
+4,1,3.149
+3,1,3.521
+7,1,2.776
+4,2,4.122
+3,2,4.966
+5,1,8.952
+7,2,3.183
+4,3,4.798
+7,3,3.432
+8,1,1.561
+3,3,5.912
+8,2,1.523
+8,3,1.643
+6,1,17.486
+5,2,11.155
+9,1,18.072
+5,3,11.343
+11,1,14.551
+6,2,19.374
+10,1,22.777
+11,2,13.733
+9,2,17.099
+12,1,18.242
+6,3,18.651
+10,2,22.206
+11,3,14.345
+9,3,17.606
+12,2,19.191
+13,1,21.684
+10,3,24.489
+12,3,20.351
+15,1,30.087
+16,1,16.029
+13,2,22.904
+17,1,10.825
+Received exception from server (version 25.9.2):
+Code: 241. DB::Exception: Received from localhost:9000. DB::Exception: (total) memory limit exceeded: would use 7.66 GiB (attempt to allocate chunk of 0.00 B), current RSS: 5.94 GiB, maximum: 7.66 GiB. OvercommitTracker decision: Query was selected to stop by OvercommitTracker: While executing AggregatingTransform. (MEMORY_LIMIT_EXCEEDED)
+(query: SELECT UserID, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, SearchPhrase ORDER BY COUNT(*) DESC LIMIT 10;)
+14,1,40.497
+16,2,1.907
+Received exception from server (version 25.9.2):
+Code: 241. DB::Exception: Received from localhost:9000. DB::Exception: (total) memory limit exceeded: would use 7.67 GiB (attempt to allocate chunk of 0.00 B), current RSS: 5.39 GiB, maximum: 7.66 GiB. OvercommitTracker decision: Query was selected to stop by OvercommitTracker: While executing AggregatingTransform. (MEMORY_LIMIT_EXCEEDED)
+(query: SELECT UserID, COUNT(*) FROM hits GROUP BY UserID ORDER BY COUNT(*) DESC LIMIT 10;)
+16,3,16.395
+15,2,33.347
+13,3,32.359
+17,2,39.091
+Received exception from server (version 25.9.2):
+Code: 241. DB::Exception: Received from localhost:9000. DB::Exception: (total) memory limit exceeded: would use 7.66 GiB (attempt to allocate chunk of 4.50 MiB), current RSS: 5.74 GiB, maximum: 7.66 GiB. OvercommitTracker decision: Query was selected to stop by OvercommitTracker: While executing AggregatingTransform. (MEMORY_LIMIT_EXCEEDED)
+(query: SELECT UserID, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, SearchPhrase ORDER BY COUNT(*) DESC LIMIT 10;)
+19,1,7.017
+Received exception from server (version 25.9.2):
+Code: 241. DB::Exception: Received from localhost:9000. DB::Exception: (total) memory limit exceeded: would use 7.66 GiB (attempt to allocate chunk of 0.00 B), current RSS: 5.07 GiB, maximum: 7.66 GiB. OvercommitTracker decision: Query was selected to stop by OvercommitTracker: While executing AggregatingTransform. (MEMORY_LIMIT_EXCEEDED)
+(query: SELECT UserID, extract(minute FROM EventTime) AS m, SearchPhrase, COUNT(*) FROM hits GROUP BY UserID, m, SearchPhrase ORDER BY COUNT(*) DESC LIMIT 10;)
+14,2,46.240
+18,1,48.174
+15,3,44.492
+20,1,0.105
+20,2,0.094
+20,3,0.098
